@@ -99,3 +99,15 @@ width:100%;
 height:100%;
 object-fit:cover;
 }
+
+.Home-Rate-Box-Text-Important{
+    font-size: 17px;
+    font-weight:500;
+    color: rgb(51,51,51);
+}
+
+.Home-Rate-Box-Text-Not-Important{
+    font-size: 14px;
+    font-weight:400;
+    color: rgb(153,153,153);
+}

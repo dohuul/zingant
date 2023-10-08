@@ -1,0 +1,41 @@
+.rate-select-box-vendor-img{
+    width: 70px;
+    height: 70px;
+}
+
+.rate-select-box-text-unimportant {
+    font-size:14px;
+    line-height:17px;
+    color: rgb(153,153,153);
+}
+
+.rate-select-box-text {
+    font-size:17px;
+    line-height:19px;
+    color: rgb(0,0,0);
+    font-weight:400;
+}
+
+.rate-select-box-container {
+    border-color: rgb(204,204,204);
+    border-radius: 5px;
+    background-color:linear-gradient(rgb(255, 255, 255) 24%, rgb(235, 235, 235) 100%);
+    opacity:1;
+    border-style: solid;
+    cursor:pointer;
+    border-width: 1px;
+    list-style:none;
+
+}
+
+.rate-select-box-button-triangle{
+    font-size:1.33333em;
+    line-height:0.75em;
+    width:0.625em;
+}
+
+.rate-select-box-button-triangle-right-or-left{
+    font-size:1.33333em;
+    line-height:0.75em;
+    width:0.375em;
+}

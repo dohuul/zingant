@@ -9,6 +9,8 @@ import right_img from '../../images/right_panel.png';
 
 import { Navbar, NavDropdown, Nav, Container, Row, Col, Button,Form } from 'react-bootstrap'; 
 
+import RateSelectBox from './page-sections/rate_select_box';
+
 
 function Home(props){
     return (
@@ -111,31 +113,43 @@ function Home(props){
                             <Form>
                                 <Row>
                                     <Col>
-                                        <Form.Label>From (USA only)</Form.Label>
+                                        <Form.Label>
+                                           <span  className='Home-Rate-Box-Text-Important'>From</span> 
+                                           <span className='Home-Rate-Box-Text-Not-Important'> (USA only)</span> 
+                                        </Form.Label>
                                         <Form.Control placeholder="Zipcode" />
                                     </Col>
                                     <Col>
-                                        <Form.Label>To (USA only)</Form.Label>
+                                        <Form.Label>
+                                            <span  className='Home-Rate-Box-Text-Important'>To</span> 
+                                            <span className='Home-Rate-Box-Text-Not-Important'> (USA only)</span> 
+                                        </Form.Label>
                                         <Form.Control placeholder="Zipcode" />
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col>
-                                        <Form.Label>Type of Packaging</Form.Label>
-                                        <Form.Select aria-label="Default select example">
-                                            <option>Box or Rigid Packaging</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                      </Form.Select>
+                                        <Form.Label>
+                                            <span  className='Home-Rate-Box-Text-Important'>Type of Packaging</span>
+                                        </Form.Label>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col>
-                                        <Form.Label>Dimensions (inches)</Form.Label>
+                                        <RateSelectBox />
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col>
+                                        <Form.Label>
+                                            <span  className='Home-Rate-Box-Text-Important'>Dimensions</span>
+                                            <span className='Home-Rate-Box-Text-Not-Important'> (inches)</span>                                                                         
+                                        </Form.Label>
                                     </Col>
                                     <Col>
-                                        <Form.Label>Weight</Form.Label>
+                                        <Form.Label>
+                                            <span  className='Home-Rate-Box-Text-Important'>Weight</span>
+                                        </Form.Label>
                                     </Col>
                                 </Row>
                                 <Row>
@@ -187,6 +201,12 @@ function Home(props){
                         </div>
                      */}
                     </Col>
+                </Row>
+
+                <Row>
+                     <Col>
+                        <RateSelectBox />
+                     </Col>
                 </Row>
             </Container>
 

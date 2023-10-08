@@ -1,0 +1,33 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+
+$my-color: #0000FF;
+
+.testscss{
+    color: $my-color;
+}
+
+
+
+$utilities: (
+    "width": (
+        property: width,
+        class: w,
+        values: (
+          25: 25%,
+          50: 80%,
+          75: 75%,
+          100: 100%,
+          10: 10%,
+          80: 80%,
+          auto: auto
+        )
+      )
+);
+
+@import "bootstrap/scss/utilities/api";
