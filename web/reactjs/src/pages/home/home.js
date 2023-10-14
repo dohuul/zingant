@@ -9,7 +9,7 @@ import right_img from '../../images/right_panel.png';
 
 import { Navbar, NavDropdown, Nav, Container, Row, Col, Button,Form } from 'react-bootstrap'; 
 
-import RateSelectBox from './page-sections/rate_select_box';
+import RateSelectBoxFunc from './page-sections/rate_select_box';
 
 
 function Home(props){
@@ -136,7 +136,7 @@ function Home(props){
                                 </Row>
                                 <Row>
                                     <Col>
-                                        <RateSelectBox />
+                                        <RateSelectBoxFunc />
                                     </Col>
                                 </Row>
                                 <Row>
@@ -203,11 +203,7 @@ function Home(props){
                     </Col>
                 </Row>
 
-                <Row>
-                     <Col>
-                        <RateSelectBox />
-                     </Col>
-                </Row>
+              
             </Container>
 
            
